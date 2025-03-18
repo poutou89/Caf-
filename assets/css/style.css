@@ -15,7 +15,7 @@ header {
     color: #fff;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 2px 4px lightslategray;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
 main {
@@ -40,26 +40,41 @@ ul li {
     margin: 0.5rem 0;
     padding: 0.5rem;
     border-radius: 5px;
-    box-shadow: 0 2px 4px lightslategray;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-img {
-    border-radius: 20px;
-    box-shadow: 0 2px 4px lightslategray;
+#banner {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+} 
+
+#banner .banner-img {
+    max-width: 50%;
+}
+
+#banner .banner-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.events {
+    display: flex;
+    gap: 20px;
 }
 
 .event {
+    width: 33%;
     background-color: #ffe4e1;
     margin: 1rem 0;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 5px;
-    box-shadow: 0px 2px 8px grey;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-.event-box {
-    display: flex;
-    align-items: flex-start;
-    gap: 1%;
+.event h3 {
+    margin: 0;
 }
 
 .btn {
@@ -69,17 +84,26 @@ img {
     background-color: #ffb6c1;
     text-decoration: none;
     border-radius: 5px;
-}
-
-.btn-primary {
-    display: inline;
-    width: 20%;
-    text-align: center;
-    box-shadow: 0px 2px 8px grey;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
 .btn:hover {
     background-color: #ff8da1;
+}
+
+#reservation h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 40px;
+}
+
+form .form-item, form .form-submit {
+    width: 40%;
 }
 
 form label {
@@ -87,40 +111,53 @@ form label {
 }
 
 form input {
-    width: 70vh;
+    width: 100%;
     padding: 0.5rem;
     margin-top: 0.5rem;
 }
 
-#banner {
-    display: flex;
-    justify-content: space-around;
-    gap: 2%;
-}
+@media screen and (max-width: 430px) {
+    
+    .banner-content {
+        text-align: center;
+    }
 
-.img-top {
-    display: flex;
-    height: 50vh;
-}
+    #banner {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    #banner .banner-img {
+        max-width: 100%;
+    }
 
-.banner-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2%;
-}
+    footer {
+        padding: 0 8vh;
+    }
+    
+    .events {
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+    }
 
-.form-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+    .event {
+        width: 100%;
+        margin: 0;
+        padding: 1vh;
+        max-width: 100%;
+    }
 
-.form-item {
-    display: flex;
-    flex-direction: column;
-}
+    form {
+        gap: 10px 30px;
+    }
 
-.btn-last {
-    width: 45%
+    form .form-submit {
+        width: 100%;
+    }
+
+    form input {
+        width: 100%;
+        padding: 0.8vh;
+    }
 }

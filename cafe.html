@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,28 +8,24 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-
+    
     <header>
         <h1>Café Littéraire - Un havre pour les amoureux des livres.</h1>
     </header>
-
+    
     <main>
-
         <section id="banner">
-            <div class="img-top">
-                <img src="assets/img/bookstore.webp" alt="">
+            <div class="banner-img">
+                <img src="/assets/img/bookstore.webp" alt="">
             </div>
-            <div class="banner-text">
+            <div class="banner-content">
                 <h2>Un lieu pour lire, discuter et se détendre.</h2>
-                <p>Découvrez notre espace dédié aux passionnés de littérature avec une sélection de livres, des
-                    événements littéraires et une ambiance chaleureuse. Rejoignez-nous pour une expérience inoubliable.
-                </p>
+                <p>Découvrez notre espace dédié aux passionnés de littérature avec une sélection de livres, des événements littéraires et une ambiance chaleureuse. Rejoignez-nous pour une expérience inoubliable.</p>
                 <a href="#reservation" class="btn btn-primary">Réserver une table</a>
             </div>
         </section>
-
+        
         <section id="recommandations">
             <h2>Nos recommandations de lecture</h2>
             <ul>
@@ -43,7 +38,7 @@
 
         <section id="evenements">
             <h2>Événements à venir</h2>
-            <div class="event-box">
+            <div class="events">
                 <div class="event">
                     <h3>Club de lecture</h3>
                     <p><strong>Date :</strong> 15 mars 2025</p>
@@ -68,34 +63,32 @@
         <section id="reservation">
             <h2>Réserver une table</h2>
             <form action="">
-                <div class="form-box">
-                    <div class="form-item">
-                        <label for="name">Nom : </label>
-                        <input type="text" id="name" required>
-                    </div>
-                    <div class="form-item">
-                        <label for="email">Email : </label>
-                        <input type="email" id="email" required>
-                    </div>
-                    <div class="form-item">
-                        <label for="date">Date : </label>
-                        <input type="date" id="date" required>
-                    </div>
-                    <div class="form-item">
-                        <label for="time">Heure : </label>
-                        <input type="time" id="time" required>
-                    </div>
-
-                    <input type="submit" class="btn btn-primary btn-last" value="Reserver">
+                <div class="form-item">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" placeholder="Nom et Prénom..." required>
+                </div>
+                <div class="form-item">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email"  required>
+                </div>
+                <div class="form-item">
+                    <label for="date">Date :</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-item">
+                    <label for="time">Heure :</label>
+                    <input type="time" id="time" required>
+                </div>
+                <div class="form-submit">
+                    <input type="submit" class="btn btn-primary" value="Reserver">
                 </div>
             </form>
         </section>
     </main>
-
+    
     <footer>
         <p>&copy; 2025 - Café Littéraire</p>
     </footer>
-
+    
 </body>
-
 </html>
